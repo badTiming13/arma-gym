@@ -1,25 +1,25 @@
 ---
 const testimonials = [
   {
-    profileURL: "gym-femaleinstructor.jpg",
-    author: "Donna Bleaker",
-    age: 31,
+    profileURL: "obama.webp",
+    author: "Barack Obama",
+    age: 63,
     quote:
-      "Testimonials are short quotes from people who love your brand. It's a great way to convince customers to try your services. ",
+      "I thought I was in decent shape, but Arma Gym and that young guy Arman took me to a whole new level. Now I’m lifting policies and weights!",
   },
   {
-    profileURL: "gym-ropes.jpg",
-    author: "Lauren Cross",
-    age: 28,
+    profileURL: "stallone.jpg",
+    author: "Sylvester Stallone",
+    age: 78,
     quote:
-      "Testimonials are short quotes from people who love your brand. It's a great way to convince customers to try your services. ",
+      "I’ve been in the ring plenty of times, but Arma Gym? That’s where the real training happens. Big thanks to Arman for pushing me harder than Rocky ever did!",
   },
   {
-    profileURL: "gym-instructor.jpg",
-    author: "Thomas Xue",
-    age: 44,
+    profileURL: "rdjr.jpg",
+    author: "RDJ",
+    age: 59,
     quote:
-      "Testimonials are short quotes from people who love your brand. It's a great way to convince customers to try your services. ",
+      "I might be Iron Man on screen, but Arma Gym made me feel like Iron Man in real life. Shoutout to Arman for being the genius behind the gains!",
   },
 ];
 ---
@@ -29,7 +29,7 @@ const testimonials = [
     {
       testimonials.map((profile)=>(
         <div class="m-4">
-          <img src={'/images/'+profile.profileURL} alt="Testimonial" class="object-cover w-full h-48"/>
+          <img src={'/images/'+profile.profileURL} alt="Testimonial" class="object-cover object-top w-full h-48"/>
           <div class="yellowBG p-8">
             <p class="pb-4 font-bold">
               {profile.quote}
