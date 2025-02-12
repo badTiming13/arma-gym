@@ -1,4 +1,5 @@
 ---
+import { Image } from "astro:assets";
 import Hero from "../components/Hero.astro";
 import Layout from "../layouts/Layout.astro";
 ---
@@ -12,83 +13,149 @@ import Layout from "../layouts/Layout.astro";
     />
     <section class="py-12">
       <div class="flex flex-col justify-center gap-16 max-w-6xl px-5 mx-auto">
-        <div class="flex flex-col gap-8">
-          <h1 class="text-white text-5xl italic yellowText pb-8">
-            Fuel Your Transformation
+        <div class="flex">
+          <div>
+            <h1 class="text-white text-5xl italic yellowText pb-8">
+              Bulking and Cutting
+            </h1>
+            <p class="text-white">
+              Bulking and cutting are two fundamental phases in bodybuilding.
+              Bulking involves consuming more calories than needed to gain
+              weight and build muscle through resistance training. Cutting, on
+              the other hand, requires eating fewer calories than burned to
+              reduce fat while maintaining muscle mass.
+            </p>
+          </div>
+          <div class="flex">
+            <Image
+              src={"/images/bulk-cut.webp"}
+              alt="bulk"
+              width={600}
+              height={400}
+              class="rounded-xl"
+            />
+          </div>
+        </div>
+
+        <div>
+          <h1 class="text-white text-4xl italic yellowText pb-8">
+            Bulking Phase
           </h1>
-          <p class="text-white">
-            Building your dream physique is a journey of balance—knowing when to
-            push for size and when to carve out definition. That’s where Bulking
-            & Cutting come in. At Arma Gym, we guide you through both phases,
-            helping you gain lean muscle and shed fat with precision.
-          </p>
-          <p class="text-white">
-            Bulking is about fueling your body to grow. It’s eating with
-            purpose, training with intensity, and pushing your limits to pack on
-            muscle mass. But smart bulking isn’t about overeating—it’s about
-            providing your body with the right nutrients to grow stronger
-            without unnecessary fat.
-          </p>
           <ul class="list-disc pl-10">
             <li class="text-white">
               <p>
-                Fuel Your Growth: High-protein, nutrient-dense meals designed
-                for clean gains.
+                <strong>Set Your Goal:</strong> Aim to eat 250-500 calories above
+                your maintenance level. Use apps like MacroFactor to track calories.
               </p>
             </li>
             <li class="text-white">
               <p>
-                Lift Heavy, Lift Smart: Progressive overload and compound lifts
-                to maximize muscle growth.
+                <strong>Track Your Protein Intake:</strong> Consume 1.8-2.2g of protein
+                per kg of body weight. Opt for lean sources like chicken, beef, fish,
+                eggs, and cottage cheese.
               </p>
             </li>
             <li class="text-white">
               <p>
-                Recover Like a Pro: Rest and recovery are just as important as
-                training—this is when real growth happens.
+                <strong>Increase Carbs:</strong> Carbs provide energy. Include sources
+                like sweet potatoes, rice, pasta, and oats. Eat more carbs pre-workout
+                for better performance.
+              </p>
+            </li>
+            <li class="text-white">
+              <p>
+                <strong>Include Healthy Fats:</strong> Eat fats from olive oil, avocados,
+                nuts, and fatty fish.
+              </p>
+            </li>
+            <li class="text-white">
+              <p>
+                <strong>Training:</strong> Focus on progressive overload. Train at
+                least 4-6 times per week and allow recovery days when needed.
+              </p>
+            </li>
+            <li class="text-white">
+              <p>
+                <strong>Track Your Progress:</strong> Monitor weight, body measurements,
+                and personal records. Use body fat percentage assessments available
+                at most gyms.
+              </p>
+            </li>
+            <li class="text-white">
+              <p>
+                <strong>Stay Consistent:</strong> Stick to your meal plan and training
+                routine for best results.
               </p>
             </li>
           </ul>
-          <p class="text-white">
-            Cutting is where the grind pays off. It’s about revealing the muscle
-            you’ve built by burning fat and dialing in your nutrition. This
-            phase demands discipline, but the reward is seeing a leaner, sharper
-            version of yourself emerge.
-          </p>
+        </div>
+
+        <div>
+          <h1 class="text-white text-4xl italic yellowText pb-8">
+            Cutting Phase
+          </h1>
           <ul class="list-disc pl-10">
             <li class="text-white">
               <p>
-                Precision Nutrition: Calorie control and clean eating to shed
-                fat while preserving muscle..
+                <strong>Set Your Goal:</strong> Reduce calorie intake by 250-500
+                below maintenance while tracking calories with apps like MacroFactor.
               </p>
             </li>
             <li class="text-white">
               <p>
-                High-Intensity Workouts: Cardio and conditioning to torch
-                calories and boost endurance.
+                <strong>Track Your Protein Intake:</strong> Maintain 1.8-2.2g of
+                protein per kg of body weight to preserve muscle mass.
               </p>
             </li>
             <li class="text-white">
               <p>
-                Mind Over Matter: Mental toughness is key—every choice brings
-                you closer to your goals.
+                <strong>Cut Carbs:</strong> Reduce but don’t eliminate carbs. Focus
+                on complex carbs like vegetables and whole grains.
+              </p>
+            </li>
+            <li class="text-white">
+              <p>
+                <strong>Include Healthy Fats:</strong> Continue consuming healthy
+                fats from sources like olive oil, avocados, and nuts.
+              </p>
+            </li>
+            <li class="text-white">
+              <p>
+                <strong>Training & Cardio:</strong> Incorporate 20-30 minutes of
+                cardio post-workout. Consider walking over running to prevent knee
+                injuries, or try HIIT workouts.
+              </p>
+            </li>
+            <li class="text-white">
+              <p>
+                <strong>Stay Hydrated:</strong> Drink enough water to aid fat loss
+                and prevent dehydration.
+              </p>
+            </li>
+            <li class="text-white">
+              <p>
+                <strong>Track Your Progress:</strong> Monitor weight and body composition
+                regularly.
+              </p>
+            </li>
+            <li class="text-white">
+              <p>
+                <strong>Stay Consistent:</strong> Just like bulking, consistency
+                in diet and training is key to cutting success.
               </p>
             </li>
           </ul>
-          <p class="text-white">
-            Bulking and cutting are two sides of the same coin. One builds the
-            foundation, the other reveals the masterpiece. Mastering both phases
-            isn’t just about physical change—it’s about developing the patience,
-            focus, and resilience needed to stay committed to the process.
-          </p>
-          <p class="text-white">
-            At
-            Arma Gym, we’re here to guide you through every stage. From
-            customized meal plans to tailored workout programs, we make sure
-            every step you take moves you closer to your ultimate physique. Fuel
-            up. Trim down. Transform your body and mind. Start your journey
-            today.
-          </p>
+        </div>
+
+        <div>
+          <h1 class="text-white text-4xl italic yellowText pb-8">
+            Influencers for Healthy Meals
+          </h1>
+          <ul class="list-disc pl-10">
+            <li class="text-white"><p>Joseph Abell</p></li>
+            <li class="text-white"><p>Noel Deyzel</p></li>
+            <li class="text-white"><p>Ethan Chlebowski</p></li>
+          </ul>
         </div>
       </div>
     </section>

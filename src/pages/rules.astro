@@ -1,49 +1,130 @@
 ---
-import Hero from '../components/Hero.astro';
-import Layout from '../layouts/Layout.astro';
-
-
+import Hero from "../components/Hero.astro";
+import Layout from "../layouts/Layout.astro";
 ---
+
 <Layout title="Arma Gym">
-	<main>
-		<Hero callToAction='Be a Beast' buttonText='Start journey' companyName='Arma Gym'/>
-        <section class="py-12">
-            <div class="flex flex-col justify-center gap-16 max-w-6xl px-5 mx-auto">
-              <div>
-                <h1 class="text-white text-5xl italic yellowText pb-8">Basic Rules at the Gym</h1>
-                <p class="text-white ">
-                    Welcome to Arma Gym—where gains are made and legends are built! To keep our space safe, motivating, and respectful for everyone, please follow these basic gym rules:
-                </p>
-              </div>
-              <div>
-                <h1 class="text-white text-4xl italic yellowText pb-8"> Respect the Equipment</h1>
-                <ul class="list-disc pl-10">
-                    <li class="text-white"><p>Always return weights and equipment to their proper place.</p></li>
-                    <li class="text-white"><p>Avoid dropping weights unnecessarily—our floors are tough, but not invincible.</p></li>
-                </ul>
-              </div>
-              <div>
-                <h1 class="text-white text-4xl italic yellowText pb-8"> Clean Up After Yourself</h1>
-                <ul class="list-disc pl-10">
-                    <li class="text-white"><p>Wipe down machines and benches after use.</p></li>
-                    <li class="text-white"><p>Bring a towel and use it during workouts to keep the space fresh for everyone.</p></li>
-                </ul>
-              </div>
-              <div>
-                <h1 class="text-white text-4xl italic yellowText pb-8">Share the Space</h1>
-                <ul class="list-disc pl-10">
-                    <li class="text-white"><p>Don’t hog machines or equipment—let others work in between sets.</p></li>
-                    <li class="text-white"><p>Be mindful during peak hours; we’re all here to improve!</p></li>
-                </ul>
-              </div>
-              <div>
-                <h1 class="text-white text-4xl italic yellowText pb-8"> Stay Safe, Lift Smart</h1>
-                <ul class="list-disc pl-10">
-                    <li class="text-white"><p>Use proper form and ask for a spotter when lifting heavy.</p></li>
-                    <li class="text-white"><p>Don’t attempt lifts or exercises beyond your ability—leave the superhero stuff to Arman.</p></li>
-                </ul>
-              </div>
-             
-            </div>
-	</main>
+  <main>
+    <Hero
+      callToAction="Be a Beast"
+      buttonText="Start journey"
+      companyName="Arma Gym"
+    />
+    <section class="py-12">
+      <div class="flex flex-col justify-center gap-16 max-w-6xl px-5 mx-auto">
+        <div>
+          <h1 class="text-white text-5xl italic yellowText pb-8">
+            Basic Gym Rules
+          </h1>
+          <p class="text-white">
+            To ensure a clean, safe, and respectful gym environment, please follow these basic rules:
+          </p>
+        </div>
+        
+        <div>
+          <h1 class="text-white text-4xl italic yellowText pb-8">
+            Bring a Towel
+          </h1>
+          <ul class="list-disc pl-10">
+            <li class="text-white">
+              <p>Always carry a clean towel to place on benches or machines during use.</p>
+            </li>
+            <li class="text-white">
+              <p>After exercising, wipe down the equipment to remove sweat. Look for disinfection tools nearby, but if unavailable, it’s fine to use your towel.</p>
+            </li>
+          </ul>
+        </div>
+        
+        <div>
+          <h1 class="text-white text-4xl italic yellowText pb-8">
+            Re-Rack Weights and Return Equipment
+          </h1>
+          <ul class="list-disc pl-10">
+            <li class="text-white">
+              <p>After using dumbbells, barbells, or other equipment, return them to their designated places.</p>
+            </li>
+          </ul>
+        </div>
+        
+        <div>
+          <h1 class="text-white text-4xl italic yellowText pb-8">
+            Share Equipment and Allow Others to "Work In"
+          </h1>
+          <ul class="list-disc pl-10">
+            <li class="text-white">
+              <p>During peak hours, avoid sitting on your phone scrolling TikTok while occupying equipment.</p>
+            </li>
+            <li class="text-white">
+              <p>If you're taking extended breaks between sets, offer to let others work in with you.</p>
+            </li>
+          </ul>
+        </div>
+        
+        <div>
+          <h1 class="text-white text-4xl italic yellowText pb-8">
+            Limit Phone Use
+          </h1>
+          <ul class="list-disc pl-10">
+            <li class="text-white">
+              <p>Avoid occupying equipment while texting or browsing.</p>
+            </li>
+            <li class="text-white">
+              <p>It’s totally fine to use your phone to track your exercises, but stay mindful of others waiting.</p>
+            </li>
+          </ul>
+        </div>
+        
+        <div>
+          <h1 class="text-white text-4xl italic yellowText pb-8">
+            Use Headphones for Personal Music
+          </h1>
+          <ul class="list-disc pl-10">
+            <li class="text-white">
+              <p>If you prefer your own music, use headphones to avoid disturbing others.</p>
+            </li>
+            <li class="text-white">
+              <p>Keep the volume at a level where you can still be aware of your surroundings, not just at the gym but also while walking outside.</p>
+            </li>
+          </ul>
+        </div>
+        
+        <div>
+          <h1 class="text-white text-4xl italic yellowText pb-8">
+            Maintain Personal Hygiene
+          </h1>
+          <ul class="list-disc pl-10">
+            <li class="text-white">
+              <p>Wear clean workout clothes and use deodorant to ensure a non-smelly environment for everyone.</p>
+            </li>
+          </ul>
+        </div>
+        
+        <div>
+          <h1 class="text-white text-4xl italic yellowText pb-8">
+            Be Mindful of Space
+          </h1>
+          <ul class="list-disc pl-10">
+            <li class="text-white">
+              <p>Don’t take up too much space; for example, avoid jumping rope in the free weight area.</p>
+            </li>
+          </ul>
+        </div>
+        
+        <div>
+          <h1 class="text-white text-4xl italic yellowText pb-8">
+            Follow Gym-Specific Rules
+          </h1>
+          <ul class="list-disc pl-10">
+            <li class="text-white">
+              <p>Each gym may have its own set of guidelines. Make sure you know them.</p>
+            </li>
+            <li class="text-white">
+              <p>For example, some gyms request that members refrain from using chalk.</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    
+  </main>
 </Layout>
